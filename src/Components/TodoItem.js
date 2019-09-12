@@ -64,8 +64,9 @@ export class TodoItem extends Component {
 
 //PropTypes
 TodoItem.propTypes = {
-    todos: PropTypes.object.isRequired,
-    
+    todo: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired
 }
 
 //This is an example of using a variable instead of this.
@@ -73,7 +74,7 @@ const btnStyle = {
     background: '#ff0000',
     color: 'fff',
     border: 'none',
-    padding: '5px 10px',
+    padding: '5px 9px',
     borderRadius: '50%',
     cursor: 'pointer',
     float: 'right'
